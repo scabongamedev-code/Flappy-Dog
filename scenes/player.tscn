@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://be8qbmt0fe144"]
+
+[ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://doa7xxtpgcdk6" path="res://assets/goofy dog sprite.png" id="2_qhqgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yughx"]
+size = Vector2(159, 197)
+
+[node name="Player" type="CharacterBody2D" unique_id=1882973953]
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1382584224]
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=891558213]
+position = Vector2(11.5, 25.5)
+shape = SubResource("RectangleShape2D_yughx")

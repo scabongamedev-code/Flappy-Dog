@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ct8gkuk6pwa2m"]
+
+[ext_resource type="Script" uid="uid://bunugnthkyhep" path="res://scripts/pipe_spwaner.gd" id="1_njkmv"]
+[ext_resource type="PackedScene" uid="uid://dldueyprtg3bv" path="res://scenes/pipe.tscn" id="2_qtmq8"]
+
+[node name="Pipe Spwaner" type="Node" unique_id=1464763343]
+script = ExtResource("1_njkmv")
+pipe_scene = ExtResource("2_qtmq8")
+
+[node name="Timer" type="Timer" parent="." unique_id=481834686]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

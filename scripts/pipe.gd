@@ -4,3 +4,7 @@ extends Node2D
 
 func _process(delta: float) -> void:
 	position += Vector2.LEFT * pipe_speed * delta
+	
+	if position.x < -400:
+		queue_free()
+		print("some pipe has been distroyed")

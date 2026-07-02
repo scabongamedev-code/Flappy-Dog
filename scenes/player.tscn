@@ -4,15 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://doa7xxtpgcdk6" path="res://assets/goofy dog sprite.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yughx"]
-size = Vector2(87.375, 110.5)
+size = Vector2(65.6875, 88.25)
 
 [node name="Player" type="CharacterBody2D" unique_id=1882973953]
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1382584224]
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.45, 0.45)
 texture = ExtResource("2_qhqgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=891558213]
-position = Vector2(10.3125, 16.25)
+position = Vector2(4, 9)
 shape = SubResource("RectangleShape2D_yughx")

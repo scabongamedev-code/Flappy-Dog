@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://dldueyprtg3bv" path="res://scenes/pipe.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://ct8gkuk6pwa2m" path="res://scenes/pipe_spwaner.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node" unique_id=1786270186]
 
@@ -10,3 +11,5 @@ position = Vector2(415, 251)
 
 [node name="Pipe" parent="." unique_id=633452539 instance=ExtResource("2_0wfyh")]
 position = Vector2(1128, 18)
+
+[node name="Pipe Spwaner" parent="." unique_id=1464763343 instance=ExtResource("3_sugp2")]

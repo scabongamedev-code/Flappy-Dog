@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dgma8flu1bdrp" path="res://scenes/pipe_shape.tscn" id="1_8x3ej"]
 [ext_resource type="Script" uid="uid://86fmpgwxwmyg" path="res://scripts/pipe.gd" id="1_arpqm"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yughx"]
+size = Vector2(50, 295)
+
 [node name="Pipe" type="Node2D" unique_id=633452539]
 script = ExtResource("1_arpqm")
 pipe_speed = 150.0
@@ -13,3 +16,11 @@ rotation = 3.1415927
 
 [node name="pipe" parent="." unique_id=1630576274 instance=ExtResource("1_8x3ej")]
 position = Vector2(0, 500)
+
+[node name="Score area" type="Area2D" parent="." unique_id=1159445817]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score area" unique_id=1198911952]
+position = Vector2(3, 188.5)
+shape = SubResource("RectangleShape2D_yughx")
+
+[connection signal="body_entered" from="Score area" to="." method="_on_score_area_body_entered"]

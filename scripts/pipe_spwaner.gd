@@ -15,9 +15,6 @@ func _spwan_pipe():
 	add_child(new_pipe)
 	
 
-	
-
-
 func _on_timer_timeout() -> void:
 	_spwan_pipe()
 	timer.wait_time = randf_range(2.0, 2.5)

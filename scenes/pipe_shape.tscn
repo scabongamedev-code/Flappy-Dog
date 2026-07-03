@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dgma8flu1bdrp"]
 
 [ext_resource type="Texture2D" uid="uid://bp8e1m4uc3blg" path="res://assets/pipe-green.png" id="1_8x3ej"]
+[ext_resource type="PackedScene" uid="uid://b1nefmlsw0nef" path="res://scenes/death_area.tscn" id="3_1yylv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rsntv"]
 size = Vector2(52, 320)
@@ -12,3 +13,7 @@ texture = ExtResource("1_8x3ej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=513802949]
 shape = SubResource("RectangleShape2D_rsntv")
+
+[node name="Death Area" parent="." unique_id=1169456457 instance=ExtResource("3_1yylv")]
+
+[connection signal="body_entered" from="Death Area" to="Death Area" method="_on_body_entered"]

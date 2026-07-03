@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://cbdhj4h63gcqx" path="res://resources/Game Data.tres" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://ct8gkuk6pwa2m" path="res://scenes/pipe_spwaner.tscn" id="3_sugp2"]
 [ext_resource type="FontFile" uid="uid://cqcvlhalu2q7f" path="res://assets/Minecraft.ttf" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://b1nefmlsw0nef" path="res://scenes/death_area.tscn" id="7_o6xl0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xnhpt"]
 font = ExtResource("5_tbgi4")
@@ -43,3 +44,13 @@ offset_bottom = 39.736
 grow_horizontal = 2
 text = "0"
 label_settings = SubResource("LabelSettings_xnhpt")
+
+[node name="Death Area" parent="." unique_id=1169456457 instance=ExtResource("7_o6xl0")]
+position = Vector2(1, -108)
+rotation = 1.5813304
+scale = Vector2(1, 10)
+
+[node name="Death Area2" parent="." unique_id=1288541924 instance=ExtResource("7_o6xl0")]
+position = Vector2(3, 710)
+rotation = 1.5813304
+scale = Vector2(1, 10)

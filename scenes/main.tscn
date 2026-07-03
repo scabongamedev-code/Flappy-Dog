@@ -16,6 +16,13 @@ font_size = 100
 script = ExtResource("1_jyhfs")
 game_data = ExtResource("2_tefeu")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=733215622]
+offset_left = -1741.0
+offset_top = -1058.0
+offset_right = 3249.0
+offset_bottom = 2052.0
+color = Color(1.4439226e-07, 0.48657936, 0.51001024, 1)
+
 [node name="Player" parent="." unique_id=1882973953 instance=ExtResource("1_o5qli")]
 position = Vector2(415, 251)
 

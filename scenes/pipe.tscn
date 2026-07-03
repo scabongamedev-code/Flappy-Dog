@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dgma8flu1bdrp" path="res://scenes/pipe_shape.tscn" id="1_8x3ej"]
 [ext_resource type="Script" uid="uid://86fmpgwxwmyg" path="res://scripts/pipe.gd" id="1_arpqm"]
+[ext_resource type="AudioStream" uid="uid://b5aw66s5c46hj" path="res://assets/point.ogg" id="3_8p0di"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yughx"]
 size = Vector2(50, 295)
@@ -22,5 +23,8 @@ position = Vector2(0, 500)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Score area" unique_id=1198911952]
 position = Vector2(3, 188.5)
 shape = SubResource("RectangleShape2D_yughx")
+
+[node name="point sound" type="AudioStreamPlayer" parent="." unique_id=1874353859]
+stream = ExtResource("3_8p0di")
 
 [connection signal="body_entered" from="Score area" to="." method="_on_score_area_body_entered"]

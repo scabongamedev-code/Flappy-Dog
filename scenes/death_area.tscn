@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b1nefmlsw0nef"]
 
 [ext_resource type="Script" uid="uid://dwr5ax53v8o4s" path="res://scripts/death_area.gd" id="1_wtpbu"]
+[ext_resource type="AudioStream" uid="uid://5ujweucdioby" path="res://assets/die.ogg" id="2_e8wjq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yughx"]
 size = Vector2(52, 323)
@@ -12,5 +13,8 @@ script = ExtResource("1_wtpbu")
 position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_yughx")
 debug_color = Color(0.8235294, 0, 0, 1)
+
+[node name="die sound" type="AudioStreamPlayer" parent="." unique_id=613620094]
+stream = ExtResource("2_e8wjq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ct8gkuk6pwa2m" path="res://scenes/pipe_spwaner.tscn" id="3_sugp2"]
 [ext_resource type="FontFile" uid="uid://cqcvlhalu2q7f" path="res://assets/Minecraft.ttf" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://b1nefmlsw0nef" path="res://scenes/death_area.tscn" id="7_o6xl0"]
+[ext_resource type="AudioStream" uid="uid://c8qntmdeqv5ul" path="res://assets/game music(flappy dog).mp3" id="8_tipki"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xnhpt"]
 font = ExtResource("5_tbgi4")
@@ -61,3 +62,8 @@ scale = Vector2(1, 10)
 position = Vector2(3, 710)
 rotation = 1.5813304
 scale = Vector2(1, 10)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1450144432]
+stream = ExtResource("8_tipki")
+autoplay = true
+parameters/looping = true

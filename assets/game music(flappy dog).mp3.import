@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8qntmdeqv5ul"
+path="res://.godot/imported/game music(flappy dog).mp3-298e5ca84d9d3aba93dd1f3ffdca34f7.mp3str"
+
+[deps]
+
+source_file="res://assets/game music(flappy dog).mp3"
+dest_files=["res://.godot/imported/game music(flappy dog).mp3-298e5ca84d9d3aba93dd1f3ffdca34f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dm2o13gd4bjwg"]
+
+[node name="Highest Score" type="Control" unique_id=694248063]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=443662051]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.134
+anchor_top = 0.080000006
+anchor_right = 0.83800006
+anchor_bottom = 0.92
+offset_left = 32.63199
+offset_top = 0.15999603
+offset_right = -0.37609863
+offset_bottom = -0.16003418
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Highest Score Label" type="Label" parent="." unique_id=1055217893]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

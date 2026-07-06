@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://cqcvlhalu2q7f" path="res://assets/Minecraft.ttf" id="2_6c8j5"]
 [ext_resource type="AudioStream" uid="uid://cyfu7q0eh4d4d" path="res://assets/alphix-game-over-sounf effect.mp3" id="2_umd70"]
 [ext_resource type="Texture2D" uid="uid://bfcjyct2wb236" path="res://assets/moka_lose-r.png" id="3_6c8j5"]
+[ext_resource type="Texture2D" uid="uid://3gcb0kh3c2uk" path="res://assets/IMG20260706161240__1_-removebg-preview.png" id="5_p3vro"]
 
 [sub_resource type="Image" id="Image_mjrnn"]
 data = {
@@ -384,14 +385,16 @@ text = "Back To Main Menu
 "
 
 [node name="MokaLoseR" type="Sprite2D" parent="." unique_id=762552700]
-position = Vector2(209, 281)
+position = Vector2(954, 415)
 texture = ExtResource("3_6c8j5")
+flip_h = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=336771416]
 libraries/ = SubResource("AnimationLibrary_p3vro")
 autoplay = &"start"
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1706296303]
+visible = false
 layout_mode = 0
 offset_left = -5286.0
 offset_top = -2986.0
@@ -399,6 +402,11 @@ offset_right = 6473.0
 offset_bottom = 3850.0
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Img202607061612401RemovebgPreview" type="Sprite2D" parent="." unique_id=1015911876]
+position = Vector2(433, 357.99997)
+rotation = -2.4940755
+texture = ExtResource("5_p3vro")
 
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="Back To Main Menu" to="." method="_on_back_to_main_menu_pressed"]

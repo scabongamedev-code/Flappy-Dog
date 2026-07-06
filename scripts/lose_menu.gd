@@ -8,4 +8,4 @@ func _on_restart_pressed() -> void:
 
 
 func _on_back_to_main_menu_pressed() -> void:
-	print("Main Menu Will Be Add Sone.")
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

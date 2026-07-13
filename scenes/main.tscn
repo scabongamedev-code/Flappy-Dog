@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://d1an8qupc618n" path="res://scripts/Game Manger.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://dldueyprtg3bv" path="res://scenes/pipe.tscn" id="2_0wfyh"]
-[ext_resource type="Resource" uid="uid://cbdhj4h63gcqx" path="res://resources/Game Data.tres" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://ct8gkuk6pwa2m" path="res://scenes/pipe_spwaner.tscn" id="3_sugp2"]
 [ext_resource type="FontFile" uid="uid://cqcvlhalu2q7f" path="res://assets/Minecraft.ttf" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://b1nefmlsw0nef" path="res://scenes/death_area.tscn" id="7_o6xl0"]
@@ -53,7 +52,6 @@ _data = {
 
 [node name="Main" type="Node" unique_id=1786270186]
 script = ExtResource("1_jyhfs")
-game_data = ExtResource("2_tefeu")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=733215622]
 offset_left = -1741.0

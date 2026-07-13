@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Flappy Dog"
+config/description="This is a Flappy Bird Clone but with dog insted of birds"
 run/main_scene="uid://bpqlk4u3lansu"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://b40l7ux6h5amp"
 
 [autoload]
 
@@ -23,7 +24,6 @@ Global="*uid://dapp63y6qo410"
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [global_group]
 
@@ -47,3 +47,4 @@ jump={
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

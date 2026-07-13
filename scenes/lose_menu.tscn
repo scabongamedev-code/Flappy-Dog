@@ -394,7 +394,6 @@ libraries/ = SubResource("AnimationLibrary_p3vro")
 autoplay = &"start"
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1706296303]
-visible = false
 layout_mode = 0
 offset_left = -5286.0
 offset_top = -2986.0
